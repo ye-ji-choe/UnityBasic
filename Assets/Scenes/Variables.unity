@@ -597,9 +597,13 @@ MonoBehaviour:
   intValue: 1
   resultValue: 0
   longValue: 0
-  floatValue: 0.1
+  floatValue: 0
   fResultValue: 0
+  doubleValue: 0
+  doubleValue2: 0
   boolValue: 1
+  stringValue: "\uB098\uB294 \uBB38\uC790\uC5F4\uC774\uC57C."
+  stringValue2: 111.1
 --- !u!1 &1171105163
 GameObject:
   m_ObjectHideFlags: 0

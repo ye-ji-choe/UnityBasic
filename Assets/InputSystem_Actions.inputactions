@@ -28,7 +28,7 @@
                     "name": "Attack",
                     "type": "Button",
                     "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -91,6 +91,15 @@
                     "name": "Out",
                     "type": "Button",
                     "id": "6384baf4-def4-45e0-b91a-73b1907cc194",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Show",
+                    "type": "Button",
+                    "id": "c19fc62b-fd31-42c4-8a42-ac137a3f0af1",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -469,6 +478,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Out",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4cbff0f8-6fc8-41b8-b877-6f9a94b19380",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Show",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

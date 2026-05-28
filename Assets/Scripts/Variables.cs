@@ -1,20 +1,27 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Variables : MonoBehaviour
 {
     //Integer 정수 타입 : 딱 떨어지는 수
-    public sbyte sbyteValue; //-128 ~ 127
-    public short shortValue; //6만 ~ -6만
-    public int intValue; //21억 ~ -21억
-    public int resultValue;
-    public long longValue; //900조 ~ -900조
+    [SerializeField]private sbyte sbyteValue; //-128 ~ 127
+    [SerializeField]private short shortValue; //6만 ~ -6만
+    [SerializeField]private int intValue; //21억 ~ -21억
+    [SerializeField]private int resultValue;
+    [SerializeField]private long longValue; //900조 ~ -900조
 
     //실수 타입 : 소수점이 포함된 타입
     public float floatValue;
     public float fResultValue;
+    public double doubleValue;
+    public double doubleValue2;
+    
 
     //참, 거짓
     public bool boolValue;
+
+    public string stringValue = "나는 문자열이야.";
+    public string stringValue2 = "111";
 
     //활성화될 때마다 한번만 호출
     private void OnEnable()
@@ -73,6 +80,13 @@ public class Variables : MonoBehaviour
             Debug.Log($"boolValue는 거짓이다");
         }
 
+        if(long.TryParse(stringValue2, out long result))
+        {
+            longValue = result;
+        }
+
+        intValue = (int)longValue;
+
     }
 
     //켜져 있는 동안 한번씩 계속
@@ -81,5 +95,13 @@ public class Variables : MonoBehaviour
     {
         
         resultValue += intValue;
+        stringValue = $"현재 ResultValue값은 {resultValue}입니다.({intValue})";
+        //stringValue = resultValue.ToString();
+
+    }
+
+    public bool Jump()
+    {
+        return true;
     }
 }
