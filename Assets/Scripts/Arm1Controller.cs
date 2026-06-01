@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GripperController : MonoBehaviour
+public class Arm1Controller : MonoBehaviour
 {
     public Animator anim;
     public GripperArea area;
